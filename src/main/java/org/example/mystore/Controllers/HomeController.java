@@ -14,4 +14,9 @@ public class HomeController {
     public String women() {
         return "women";
     }
+
+    @RequestMapping("/kids")
+    public String kids() {
+        return "kids";
+    }
 }
