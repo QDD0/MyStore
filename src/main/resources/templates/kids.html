@@ -25,6 +25,14 @@
             <a href="/women" >women</a>
             <a href="/men" >men</a>
             <a href="/kids">kids</a>
+
+            <div th:if="${username != null}">
+                <a href="/login" th:text="${username}"></a>
+            </div>
+
+            <div th:unless="${username != null}">
+                <a href="/login">Login</a>
+            </div>
         </div>
 
         <h1 class="store-name">MyStore</h1>
@@ -138,37 +146,37 @@
         <div class="footer-section">
             <h2 class="footer-title">Покупателю</h2>
             <ul class="footer-links">
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Обмен и возврат</a></li>
-                <li><a href="#">Забрать в магазине</a></li>
-                <li><a href="#">Размер</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Уход за одеждой</a></li>
+                <li><a href="/continue">Акции</a></li>
+                <li><a href="/continue">Доставка</a></li>
+                <li><a href="/continue">Оплата</a></li>
+                <li><a href="/continue">Обмен и возврат</a></li>
+                <li><a href="/continue">Забрать в магазине</a></li>
+                <li><a href="/continue">Размер</a></li>
+                <li><a href="/continue">Поддержка</a></li>
+                <li><a href="/continue">FAQ</a></li>
+                <li><a href="/continue">Уход за одеждой</a></li>
             </ul>
         </div>
 
         <div class="footer-section">
             <h2 class="footer-title">Клубная программа</h2>
             <ul class="footer-links">
-                <li><a href="#">Частые вопросы</a></li>
-                <li><a href="#">Правила участия</a></li>
-                <li><a href="#">Стать участником</a></li>
-                <li><a href="#">Виды карт</a></li>
+                <li><a href="/continue">Частые вопросы</a></li>
+                <li><a href="/continue">Правила участия</a></li>
+                <li><a href="/continue">Стать участником</a></li>
+                <li><a href="/continue">Виды карт</a></li>
             </ul>
         </div>
 
         <div class="footer-section">
             <h2 class="footer-title">О компании</h2>
             <ul class="footer-links">
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Адреса магазинов</a></li>
-                <li><a href="#">Публичные оферта</a></li>
-                <li><a href="#">Пользовательское соглашение</a></li>
-                <li><a href="#">Политика конфиденциальности</a></li>
-                <li><a href="#">Логотипы</a></li>
+                <li><a href="/continue">Новости</a></li>
+                <li><a href="/continue">Адреса магазинов</a></li>
+                <li><a href="/continue">Публичные оферта</a></li>
+                <li><a href="/continue">Пользовательское соглашение</a></li>
+                <li><a href="/continue">Политика конфиденциальности</a></li>
+                <li><a href="/continue">Логотипы</a></li>
             </ul>
         </div>
 
@@ -176,7 +184,7 @@
             <h2 class="footer-title">Работа</h2>
             <ul class="footer-links">
                 <li><a href="https://github.com/QDD0">Вакансии</a></li>
-                <li><a href="#">Карьера</a></li>
+                <li><a href="https://github.com/QDD0">Карьера</a></li>
             </ul>
         </div>
 
