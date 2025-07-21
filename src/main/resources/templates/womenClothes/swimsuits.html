@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
             href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
             rel="stylesheet"
     />
-    <link rel="stylesheet" th:href="@{/css/style.css}">
-    <script th:src="@{/js/script.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/css/dressStyle.css}" />
 </head>
 <body>
 <header class="header">
-    <img src="https://storage-cdn11.gloria-jeans.ru/cms/banners/af/2e/307_desk_g2mn4U2U1hN0T74z8hfb.webp"
-         class="hero-img"/>
-
     <div class="nav-bar">
         <div class="menu">
             <button class="menu-btn">
@@ -35,167 +31,136 @@
                 <a href="/login">login</a>
             </div>
         </div>
+
         <h1 class="store-name">MyStore</h1>
     </div>
 </header>
 
 <section>
-    <h2 class="new-clothes">New Clothes</h2>
-
-    <div class="scroll-carousel">
-        <button class="arrow left" onclick="scrollCarousel(-1)">←</button>
-        <div class="carousel">
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/e62/686_950_2b92/161560210299.jpg"
-                    />
-                    <div class="price">Price: $ 21.45</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/20a/686_950_1067/159029640299.jpg"
-                    />
-                    <div class="price">Price: $ 15.32</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/9a3/686_950_923f/161560120299.jpg"
-                    />
-                    <div class="price">Price: $ 32.81</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/2ec/686_950_0bb7/160930240299.jpg"
-                    />
-                    <div class="price">Price: $ 54.14</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/7b2/686_950_2716/161560000299.jpg"
-                    />
-                    <div class="price">Price: $ 21.45</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/279/686_950_7ed5/160930450299.jpg"
-                    />
-                    <div class="price">Price: $ 22.69</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/18d/686_950_c8bb/161746770299.jpg"
-                    />
-                    <div class="price">Price: $ 43.44</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/mdm/media_content/resize/2ca/686_950_07c5/161560040299.jpg"
-                    />
-                    <div class="price">Price: $ 62.11</div>
-                </article>
-            </a>
-
-            <a href="#" style="text-decoration: none; color: inherit">
-                <article class="card">
-                    <img
-                            src="https://img.ostin.com/upload/content/cmsgate/ru_ostin/ost/plate/cms_auto_upload/complect_060625_18-min.jpg"
-                    />
-                    <div class="price">Price: $ 120.55</div>
-                </article>
-            </a>
-        </div>
-        <button class="arrow right" onclick="scrollCarousel(1)">→</button>
-    </div>
-</section>
-
-<section>
-    <div class="slider">
-        <img
-                src="https://calista.ru/upload/iblock/9d8/g4ytcf9a3be1sg39lxo1l29xx37mo6mc.jpg"
-                class="slide active"
-        />
-        <img
-                src="https://calista.ru/upload/iblock/4d2/disxyhypt6d6otifcwbbwnuff2ckqs3q.jpg"
-                class="slide"
-        />
-        <img
-                src="https://calista.ru/upload/iblock/f18/g9e212lc5zm2aucu68n0db3grvl2coc2.jpg"
-                class="slide"
-        />
-        <img
-                src="https://calista.ru/upload/iblock/883/1xb0e1p9xjefzaizkjmb7jewo9pd1qx5.jpg"
-                class="slide"
-        />
-    </div>
-
-    <img
-            src="https://calista.ru/upload/iblock/e55/76ud9ek3ao14kcqk2c0wf54rb5tflkd2.jpg"
-            class="second-fon"
-    />
-</section>
-
-<section>
     <div class="sale-clothes">
-        <a th:href="@{/womenClothes/vacation}" style="text-decoration: none; color: inherit">
+        <a th:href="@{/womenClothes/vacation}" style="text-decoration: none; color: inherit" class="table">
             <article>
-                <img th:src="@{/img_main_page/photoOne.jpg}"/>
+                <img th:src="@{/img_main_page/photoOne.jpg}" />
+            </article>
+        </a>
+        <a th:href="@{/womenClothes/dresses}" style="text-decoration: none; color: inherit" class="table">
+            <article>
+                <img th:src="@{/img_main_page/photoTwo.jpg}" />
+            </article>
+        </a>
+        <a th:href="@{/womenClothes/shirts}" style="text-decoration: none; color: inherit" class="table">
+            <article>
+                <img th:src="@{/img_main_page/photoThree.jpg}" />
             </article>
         </a>
 
-        <a th:href="@{/womenClothes/dresses}" style="text-decoration: none; color: inherit">
+        <a th:href="@{/womenClothes/shorts}" style="text-decoration: none; color: inherit" class="table">
             <article>
-                <img th:src="@{/img_main_page/photoTwo.jpg}"/>
+                <img th:src="@{/img_main_page/photoFour.jpg}" />
             </article>
         </a>
 
-        <a th:href="@{/womenClothes/shirts}" style="text-decoration: none; color: inherit">
+        <a th:href="@{/womenClothes/swimsuits}" style="text-decoration: none; color: inherit" class="table">
             <article>
-                <img th:src="@{/img_main_page/photoThree.jpg}"/>
+                <img th:src="@{/img_main_page/photoFive.jpg}" />
             </article>
         </a>
 
-        <a th:href="@{/womenClothes/shorts}" style="text-decoration: none; color: inherit">
+        <a th:href="@{/womenClothes/shoes}" style="text-decoration: none; color: inherit" class="table">
             <article>
-                <img th:src="@{/img_main_page/photoFour.jpg}"/>
-            </article>
-        </a>
-
-        <a th:href="@{/womenClothes/swimsuits}" style="text-decoration: none; color: inherit">
-            <article>
-                <img th:src="@{/img_main_page/photoFive.jpg}"/>
-            </article>
-        </a>
-
-        <a th:href="@{/womenClothes/shoes}" style="text-decoration: none; color: inherit">
-            <article>
-                <img th:src="@{/img_main_page/photoSix.jpg}"/>
+                <img th:src="@{/img_main_page/photoSix.jpg}" />
             </article>
         </a>
     </div>
+</section>
 
-    <img th:src="@{/img_main_page/sale.jpg}" class="sale"/>
+<section>
+    <h1 class="text-style">Женские купальники</h1>
+    <div class="dresses">
+        <a href="#1">
+            <article class="my-card">
+                <img
+                        class="mytest main-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/a68/332_460_82a1/154336810299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/7aa/332_460_c3db/154336800299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+
+        <a href="#2">
+            <article class="my-card">
+                <img
+                        class="mytest"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/99a/332_460_390b/154337160299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/347/332_460_aa4e/154337150299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+
+        <a href="#3">
+            <article class="my-card">
+                <img
+                        class="mytest"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/a6b/332_460_c4bf/154631780299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/937/332_460_c8bd/154336380299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+
+        <a href="#4">
+            <article class="my-card">
+                <img
+                        class="mytest"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/830/332_460_6025/154336960299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/c65/332_460_96e1/154336970299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+
+        <a href="#5">
+            <article class="my-card">
+                <img
+                        class="mytest"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/5f2/332_460_9603/154335950299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/be9/332_460_8203/154335960299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+
+        <a href="#6">
+            <article class="my-card">
+                <img
+                        class="mytest main-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/1b8/332_460_03df/154631790299.jpg"
+                />
+                <img
+                        class="mytest hover-img"
+                        src="https://img.ostin.com/upload/mdm/media_content/resize/f44/332_460_217d/154336510299.jpg"
+                />
+                <div class="price">Price: $ 21.45</div>
+            </article>
+        </a>
+    </div>
 </section>
 
 <footer class="site-footer">
@@ -247,10 +212,10 @@
 
         <div class="footer-section about">
             <h4>
-                MyStore — это комфортный интернет-шопинг и более 630<br/>
-                розничных магазинов. 22 года мы выпускаем одежду в<br/>
-                стиле casual для любых ситуаций, времени года и<br/>
-                погоды, помогая покупателям создать свой<br/>
+                MyStore — это комфортный интернет-шопинг и более 630<br />
+                розничных магазинов. 22 года мы выпускаем одежду в<br />
+                стиле casual для любых ситуаций, времени года и<br />
+                погоды, помогая покупателям создать свой<br />
                 неповторимый образ.
             </h4>
         </div>

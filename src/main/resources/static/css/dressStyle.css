@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+}
+
+.nav-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.store-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    margin: 0;
+    color: black;
+    font-family: "Libertinus Mono", monospace;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.sale-clothes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 4% auto;
+    max-width: 1200px;
+    cursor: pointer;
+}
+
+.table:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.dresses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 4% auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    justify-items: center;
+}
+
+.store-name::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: 1px;
+    background-color: black;
+    margin: 10px auto 0;
+}
+
+.my-card {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.my-card img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.my-card:hover .main-img {
+    opacity: 0;
+}
+
+.my-card:hover .hover-img {
+    opacity: 1;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.about h4 {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.contacts h2 {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.text-style {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 44px;
+    font-family: "Libertinus Mono", monospace;
+}

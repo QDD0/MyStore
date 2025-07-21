@@ -22,7 +22,8 @@ public class SecurityConfig {
         http.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()));
 
         http.authorizeHttpRequests(auth -> auth
-                .requestMatchers("/", "/men", "/women", "/kids", "/login", "/register", "/css/**","/img_main_page/**", "/h2-console/**").permitAll()
+                .requestMatchers("/", "/men", "/women", "/kids", "/login", "/register","/continue", "/womenClothes/**",
+                        "/css/**", "/img_main_page/**", "/js/**", "/h2-console/**").permitAll()
                 .anyRequest().authenticated()
         ).formLogin(form -> form
                 .loginPage("/login")

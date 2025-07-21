@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" th:href="@{/css/dressStyle.css}" />
+</head>
+<body>
+<header class="header">
+  <div class="nav-bar">
+    <div class="menu">
+      <button class="menu-btn">
+        <img th:src="@{/img_main_page/free-icon.png}" class="menu-icon"/>
+      </button>
+      <a href="/women">women</a>
+      <a href="/men">men</a>
+      <a href="/kids">kids</a>
+
+      <div th:if="${username != null}">
+        <a href="/login" th:text="${username}"></a>
+      </div>
+
+      <div th:unless="${username != null}">
+        <a href="/login">login</a>
+      </div>
+    </div>
+
+    <h1 class="store-name">MyStore</h1>
+  </div>
+</header>
+
+<section>
+  <div class="sale-clothes">
+    <a th:href="@{/womenClothes/vacation}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoOne.jpg}" />
+      </article>
+    </a>
+    <a th:href="@{/womenClothes/dresses}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoTwo.jpg}" />
+      </article>
+    </a>
+    <a th:href="@{/womenClothes/shirts}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoThree.jpg}" />
+      </article>
+    </a>
+
+    <a th:href="@{/womenClothes/shorts}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoFour.jpg}" />
+      </article>
+    </a>
+
+    <a th:href="@{/womenClothes/swimsuits}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoFive.jpg}" />
+      </article>
+    </a>
+
+    <a th:href="@{/womenClothes/shoes}" style="text-decoration: none; color: inherit" class="table">
+      <article>
+        <img th:src="@{/img_main_page/photoSix.jpg}" />
+      </article>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h1 class="text-style">Новая обувь для женщин</h1>
+  <div class="dresses">
+    <a href="#1">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/76a0eca074364497a5d698b3626f8de6_9366/Anthony_Edwards_1_Low_Basketball_Shoes_Green_JS1778_01_00_standard.jpg"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/00a32e96edb649aabc1dcfbf36c7c37b_9366/Anthony_Edwards_1_Low_Basketball_Shoes_Green_JS1778_02_standard.jpg"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#2">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f4347910001c44ce8a0dafead187c499_9366/Samba_OG_Shoes_White_JS1392_01_00_standard.jpg"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/fa2fa9a6cbb0497f82fbaf3ff61582c2_9366/Samba_OG_Shoes_White_JS1392_02_standard.jpg"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#3">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://nb.scene7.com/is/image/NB/u9060eca_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://nb.scene7.com/is/image/NB/u9060eca_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#4">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fc86b60b-1be1-4db2-9ca0-901b1889ba45/W+NIKE+AIR+MAX+MOTO+2K.png"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb3850eb-eaa6-4a21-b8b1-4fd2805408e6/W+NIKE+AIR+MAX+MOTO+2K.png"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#5">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/192c332025b6402b85db92ce42ea2a6c_9366/Anthony_Edwards_1_Low_Shoes_Black_JS0646_01_00_standard.jpg"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7d6e114e12204458b29ee5d2135202b6_9366/Anthony_Edwards_1_Low_Shoes_Black_JS0646_03_standard.jpg"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#6">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/74011874-3916-4216-b0ad-ac3582aee848/WMNS+AIR+FORCE+1+%2707+LX.png"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be787cee-fda9-4883-86ec-487e92f29633/WMNS+AIR+FORCE+1+%2707+LX.png"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#7">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9bee0767d37d46ff8ac446d72bd91635_9366/Gazelle_Bold_Shoes_Turquoise_JS3894_01_00_standard.jpg"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/06441e1f1977468aa3ed74487b8b2e50_9366/Gazelle_Bold_Shoes_Turquoise_JS3894_02_standard.jpg"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#8">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/405407/04/fnd/PNA/fmt/png/Speedcat-Faded-Wns-Women"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/405407/04/sv02/fnd/PNA/fmt/png/Speedcat-Faded-Wns-Women"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#9">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2cce5a24-0d29-4723-af2a-7170acb3919f/WMNS+NIKE+AIR+MAX+MUSE.png"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/35962928-6ce7-4c7a-9b70-98437972b8f5/WMNS+NIKE+AIR+MAX+MUSE.png"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#10">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ekyv2nlifqdl0qoiftvs/W+NIKE+SHOX+TL.png"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/812f197f-4ae4-4a7e-a009-b89ad48cb7c7/W+NIKE+SHOX+TL.png"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#11">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311349/01/fnd/PNA/fmt/png/Scoot-Zeros-II-2K-Basketball-Shoes"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311349/01/sv04/fnd/PNA/fmt/png/Scoot-Zeros-II-2K-Basketball-Shoes"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+
+    <a href="#12">
+      <article class="my-card">
+        <img
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/011744ef273d4a66b9cc880b980340a2_9366/Samba_OG_Shoes_White_ID0478_01_standard.jpg"
+        />
+        <img
+                style="width: 400px; height: 460px"
+                class="mytest hover-img"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e4e5659437ab4914a9a900f190717b48_9366/Samba_OG_Shoes_White_ID0478_02_standard_hover.jpg"
+        />
+        <div class="price">Price: $ 21.45</div>
+      </article>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2 class="footer-title">Покупателю</h2>
+      <ul class="footer-links">
+        <li><a href="/continue">Акции</a></li>
+        <li><a href="/continue">Доставка</a></li>
+        <li><a href="/continue">Оплата</a></li>
+        <li><a href="/continue">Обмен и возврат</a></li>
+        <li><a href="/continue">Забрать в магазине</a></li>
+        <li><a href="/continue">Размер</a></li>
+        <li><a href="/continue">Поддержка</a></li>
+        <li><a href="/continue">FAQ</a></li>
+        <li><a href="/continue">Уход за одеждой</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2 class="footer-title">Клубная программа</h2>
+      <ul class="footer-links">
+        <li><a href="/continue">Частые вопросы</a></li>
+        <li><a href="/continue">Правила участия</a></li>
+        <li><a href="/continue">Стать участником</a></li>
+        <li><a href="/continue">Виды карт</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2 class="footer-title">О компании</h2>
+      <ul class="footer-links">
+        <li><a href="/continue">Новости</a></li>
+        <li><a href="/continue">Адреса магазинов</a></li>
+        <li><a href="/continue">Публичные оферта</a></li>
+        <li><a href="/continue">Пользовательское соглашение</a></li>
+        <li><a href="/continue">Политика конфиденциальности</a></li>
+        <li><a href="/continue">Логотипы</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h2 class="footer-title">Работа</h2>
+      <ul class="footer-links">
+        <li><a href="https://github.com/QDD0">Вакансии</a></li>
+        <li><a href="https://github.com/QDD0">Карьера</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section about">
+      <h4>
+        MyStore — это комфортный интернет-шопинг и более 630<br />
+        розничных магазинов. 22 года мы выпускаем одежду в<br />
+        стиле casual для любых ситуаций, времени года и<br />
+        погоды, помогая покупателям создать свой<br />
+        неповторимый образ.
+      </h4>
+    </div>
+
+    <div class="footer-section contacts">
+      <h2>8-920-860-60-18</h2>
+      <h2>dend51108@gmail.com</h2>
+      <div class="social-icons">
+        <a href="https://t.me/coldi23"
+        ><img
+                src="https://tse3.mm.bing.net/th/id/OIP.6ytety4xFGuoxZYQA_uVrwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="icon"
+        /></a>
+        <a href="https://play.google.com/store/apps"
+        ><img
+                src="data:image/png;base64,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"
+                alt="icon"
+        /></a>
+        <a href="https://www.apple.com/app-store/"
+        ><img
+                src="data:image/png;base64,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"
+                alt="icon"
+        /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

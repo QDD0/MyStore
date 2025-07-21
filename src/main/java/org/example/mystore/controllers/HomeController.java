@@ -47,9 +47,82 @@ public class HomeController {
         return "kids";
     }
 
-    @RequestMapping("/shirts")
-    public String Tshirts() {
-        return "shirts";
+    @RequestMapping("womenClothes/dresses")
+    public String Dresses(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "womenClothes/dresses";
+    }
+
+    @RequestMapping("womenClothes/shirts")
+    public String shirts(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "womenClothes/shirts";
+    }
+
+    @RequestMapping("womenClothes/shorts")
+    public String shorts(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "womenClothes/shorts";
+    }
+
+    @RequestMapping("/womenClothes/swimsuits")
+    public String swimsuit(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "/womenClothes/swimsuits";
+    }
+
+    @RequestMapping("/womenClothes/shoes")
+    public String shoes(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "/womenClothes/shoes";
+    }
+
+    @RequestMapping("/womenClothes/vacation")
+    public String vacation(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String displayName = "login";
+
+        if (auth != null && auth.isAuthenticated() && !"anonymousUser".equals(auth.getName())) {
+            displayName = auth.getName();
+        }
+
+        model.addAttribute("username", displayName);
+        return "/womenClothes/vacation";
     }
 
     @RequestMapping("/continue")

@@ -11,7 +11,7 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" th:href="@{/css/style.css}">
-    <script th:src="@{/script.js}" defer></script>
+    <script th:src="@{/js/script.js}" defer></script>
 </head>
 <body>
 <header class="header">
@@ -31,7 +31,7 @@
             </div>
 
             <div th:unless="${username != null}">
-                <a href="/login">Login</a>
+                <a href="/login">login</a>
             </div>
         </div>
 
