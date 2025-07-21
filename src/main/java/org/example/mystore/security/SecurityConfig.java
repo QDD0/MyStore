@@ -22,7 +22,7 @@ public class SecurityConfig {
         http.headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()));
 
         http.authorizeHttpRequests(auth -> auth
-                .requestMatchers("/", "/men", "/women", "/kids", "/login", "/register","/continue", "/womenClothes/**",
+                .requestMatchers("/", "/men", "/women", "/kids", "/login", "/register","/continue", "/womenClothes/**", "/menClothes/**",
                         "/css/**", "/img_main_page/**", "/js/**", "/h2-console/**").permitAll()
                 .anyRequest().authenticated()
         ).formLogin(form -> form

@@ -202,3 +202,8 @@ body {
     font-size: 44px;
     font-family: "Libertinus Mono", monospace;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

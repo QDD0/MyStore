@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
           href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
           rel="stylesheet"
   />
-  <link rel="stylesheet" th:href="@{/css/dressStyle.css}"/>
+  <link rel="stylesheet" th:href="@{/css/dressStyle.css}" />
 </head>
 <body>
 <header class="header">
@@ -32,118 +32,128 @@
       </div>
     </div>
 
-    <a href="/women"><h1 class="store-name">MyStore</h1></a>
+    <a href="/men"><h1 class="store-name">MyStore</h1></a>
   </div>
 </header>
 
 <section>
   <div class="sale-clothes">
-    <a th:href="@{/womenClothes/vacation}" style="text-decoration: none; color: inherit" class="table">
+    <a th:href="@{/menClothes/vacation}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoOne.jpg}"/>
+        <img th:src="@{/img_main_page/manOne.jpg}" />
       </article>
     </a>
-    <a th:href="@{/womenClothes/dresses}" style="text-decoration: none; color: inherit" class="table">
+    <a th:href="@{/menClothes/shirts}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoTwo.jpg}"/>
+        <img th:src="@{/img_main_page/manTwo.jpg}" />
       </article>
     </a>
-    <a th:href="@{/womenClothes/shirts}" style="text-decoration: none; color: inherit" class="table">
+    <a th:href="@{/menClothes/t-shirts}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoThree.jpg}"/>
+        <img th:src="@{/img_main_page/manThree.jpg}" />
       </article>
     </a>
 
-    <a th:href="@{/womenClothes/shorts}" style="text-decoration: none; color: inherit" class="table">
+    <a th:href="@{/menClothes/swimshorts}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoFour.jpg}"/>
+        <img th:src="@{/img_main_page/manFour.jpg}" />
       </article>
     </a>
 
     <a th:href="@{/womenClothes/swimsuits}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoFive.jpg}"/>
+        <img th:src="@{/img_main_page/manFive.jpg}" />
       </article>
     </a>
 
-    <a th:href="@{/womenClothes/shoes}" style="text-decoration: none; color: inherit" class="table">
+    <a th:href="@{/menClothes/shoes}" style="text-decoration: none; color: inherit" class="table">
       <article>
-        <img th:src="@{/img_main_page/photoSix.jpg}"/>
+        <img th:src="@{/img_main_page/manSix.jpg}" />
       </article>
     </a>
   </div>
 </section>
 
 <section>
-  <h1 class="text-style">Новые коллекции шортов</h1>
+  <h1 class="text-style">Новая коллекция обуви для мужчин</h1>
   <div class="dresses">
     <a href="#1">
       <article class="my-card">
         <img
                 class="mytest main-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/3df/332_460_d62e/151222960299.jpg"
+                style="width: 400px; height: 460px"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/312209/01/sv01/fnd/PNA/fmt/png/MB.04-Flare-Basketball-Shoes-Unisex"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/1e1/332_460_9ba8/151222950299.jpg"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/312209/01/mod01/fnd/PNA/fmt/png/MB.04-Flare-Basketball-Shoes-Unisex"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">PUMA x LAMELO BALL MB.04 Flare  - $160<br>Men's Basketball Shoes</div>
       </article>
     </a>
 
     <a href="#2">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/f07/332_460_71ae/151223280299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a3ce45dc-21a3-4b34-ad29-cc09ec142136/AIR+MONARCH+IV.png"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/fb5/332_460_5990/151223270299.jpg"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2013aa36-3cf6-46a0-ad9a-cd5ff7927a11/AIR+MONARCH+IV.png"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Nike Air Monarch IV - $105 <br>Men's Workout Shoes</div>
       </article>
     </a>
 
     <a href="#3">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/d38/332_460_d7ac/151223040299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c4158c4c39a4ab09b8ba8c000c96fd0_9366/Samba_OG_Shoes_White_B75806_01_01_hover_standard.jpg"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/422/332_460_edf6/151223030299.jpg"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3bbecbdf584e40398446a8bf0117cf62_9366/Samba_OG_Shoes_White_B75806_01_00_standard.jpg"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Samba OG Shoes - $130</div>
       </article>
     </a>
 
     <a href="#4">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/9c0/332_460_ba76/151639750299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7bf15d99-66e9-445e-bba1-361474c1d22e/AIR+JORDAN+1+MID+SE.png"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/f5e/332_460_1a64/151639730299.jpg"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6f0466ea-0cc8-4263-b8c5-ef5ee1f0e27b/AIR+JORDAN+1+MID+SE.png"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Air Jordan 1 Mid - $165 <br>Men's Shoes</div>
       </article>
     </a>
 
     <a href="#5">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/73e/332_460_cb54/149895220299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/aee7039309304e29a56e62574ca5ea2f_9366/Handball_Spezial_Shoes_White_JH5451_01_00_standard.jpg"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/178/332_460_3698/149895210299.jpg"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/64bb2c29d34747a1877b03737bbfdca6_9366/Handball_Spezial_Shoes_White_JH5451_02_standard_hover.jpg"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Handball Spezial Shoes - $145 <br>Men's Shoes</div>
       </article>
     </a>
 
@@ -151,97 +161,111 @@
       <article class="my-card">
         <img
                 class="mytest main-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/ba1/332_460_720e/150748500299.jpg"
+                style="width: 400px; height: 460px"
+                src="https://nb.scene7.com/is/image/NB/bb480pen_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/ed4/332_460_4198/150748510299.jpg"
+                src="https://nb.scene7.com/is/image/NB/bb480pen_nb_04_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">FuelCell Ohtani 1 Trainer - $455 <br>Men's Shoes</div>
       </article>
     </a>
 
     <a href="#7">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/300/332_460_1385/154165010299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/06/fnd/PNA/fmt/png/Velocity-NITRO%E2%84%A2-4-Men"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/755/332_460_8ec4/154165000299.jpg"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/06/sv01/fnd/PNA/fmt/png/Velocity-NITRO%E2%84%A2-4-Men"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Velocity NITRO™ 4 - $175 <br>Men's Road Running Shoes</div>
       </article>
     </a>
 
     <a href="#8">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/ed6/332_460_35b5/155249160299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9a32955e-b19d-406b-a915-133807d98c84/JORDAN+TATUM+3.png"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/130/332_460_3932/155249150299.jpg"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d144bd8e-3974-4d7b-8613-6fbe1231c41b/JORDAN+TATUM+3.png"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Tatum 3 'Tunnel Walk' - $165 <br>Basketball Shoes</div>
       </article>
     </a>
 
     <a href="#9">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/66c/332_460_3994/149903010299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d40adba58d446cfb32e20b75f966cbe_9366/Adizero_EVO_SL_Shoes_Black_JP7149_01_00_standard.jpg"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/683/332_460_1211/149903000299.jpg"
+                src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/0a1f04a8ea10461d85bb2d1fe53bac26_9366/Adizero_EVO_SL_Shoes_Black_JP7149_02_standard.jpg"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Adizero EVO SL Shoes - $180</div>
       </article>
     </a>
 
     <a href="#10">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/154/332_460_c3eb/154164690299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://nb.scene7.com/is/image/NB/mmorlc6_nb_05_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/a4c/332_460_337a/154164700299.jpg"
+                src="https://nb.scene7.com/is/image/NB/mmorlc6_nb_04_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Fresh Foam X More v6 - $199.95</div>
       </article>
     </a>
 
     <a href="#11">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/7b8/332_460_1a53/154164930299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/04/fnd/PNA/fmt/png/Velocity-NITRO%E2%84%A2-4-Men"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/d15/332_460_4240/154164920299.jpg"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_750,h_750/global/311140/04/bv/fnd/PNA/fmt/png/Velocity-NITRO%E2%84%A2-4-Men"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price">Velocity NITRO™ 4 - $165 <br> Men's Road Running Shoes</div>
       </article>
     </a>
 
     <a href="#12">
       <article class="my-card">
         <img
-                class="mytest"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/2b8/332_460_b56a/157373880299.jpg"
+                class="mytest main-img"
+                style="width: 400px; height: 460px"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7cdc3d81-9901-493d-876d-d5b4509f5ef5/NIKE+AIR+MAX+PLUS+III.png"
         />
         <img
+                style="width: 400px; height: 460px"
                 class="mytest hover-img"
-                src="https://img.ostin.com/upload/mdm/media_content/resize/476/332_460_adea/157373890299.jpg"
+                src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ffccca4-3ffd-4cf1-9789-3f67dfab5142/NIKE+AIR+MAX+PLUS+III.png"
         />
-        <div class="price">Price: $ 21.45</div>
+        <div class="price" style="color: black">Nike Air Max Plus III - $245 <br> Man's shoes</div>
       </article>
     </a>
   </div>
@@ -296,10 +320,10 @@
 
     <div class="footer-section about">
       <h4>
-        MyStore — это комфортный интернет-шопинг и более 630<br/>
-        розничных магазинов. 22 года мы выпускаем одежду в<br/>
-        стиле casual для любых ситуаций, времени года и<br/>
-        погоды, помогая покупателям создать свой<br/>
+        MyStore — это комфортный интернет-шопинг и более 630<br />
+        розничных магазинов. 22 года мы выпускаем одежду в<br />
+        стиле casual для любых ситуаций, времени года и<br />
+        погоды, помогая покупателям создать свой<br />
         неповторимый образ.
       </h4>
     </div>
